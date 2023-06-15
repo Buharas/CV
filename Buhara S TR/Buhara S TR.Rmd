@@ -102,11 +102,10 @@ tribble(
 ```{r}
 library(tibble)
 tribble(
-  ~Kurum, ~Year, ~Kısaltma,
-  "FEN VE MÜHENDİSLİK FAKÜLTELERİ TİYATRO ÖĞRENCİ TOPLULUĞU", "2019", "AFTİF"
+  ~Topluluk, ~Year, ~Kısaltma, ~Kurum,
+  "FEN VE MÜHENDİSLİK FAKÜLTELERİ TİYATRO ÖĞRENCİ TOPLULUĞU", "2019", "AFTİF", "Ankara Üniversitesi"
 ) %>%
-  detailed_entries(Kurum, Year, Kısaltma)
-
+  detailed_entries(Topluluk, Year, Kısaltma, Kurum)
 
 ```
 
