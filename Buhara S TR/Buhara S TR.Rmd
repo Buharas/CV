@@ -19,7 +19,7 @@ library(vitae)
 
 # Hakkında
 
-Merhaba, ben Buhara. Ankara Üniversitesi Siyasal Bilgiler Fakültesi Politika ve Ekonomi 3. Sınıf Öğrencisiyim, aynı zamanda Anadolu Üniversitesi Menkul Kıymetler ve Sermaye Piyasası öğrencisiyim. Akademik anlamda edindiğim uluslararası ilişkiler, yönetimsel ve ekonomik teorik deneyimleri somutlaştıracağım; planlama, problem çözme gibi becerilerimle disiplinler arası çalışmaya yatkın yapımı geliştireceğim bir işte yer almak istiyorum. Bu bağlamda hem kendi teorik bilgimi pratiğe dönüştürmüş olacak hem de sizlere teorik bilgi, güncellik ve dinamik yapım ile katkı sağlayacağıma inanıyorum.  
+Merhaba, ben Buhara. Ankara Üniversitesi Siyasal Bilgiler Fakültesi Politika ve Ekonomi 3. Sınıf Öğrencisiyim, aynı zamanda Anadolu Üniversitesi Menkul Kıymetler ve Sermaye Piyasası öğrencisiyim. Akademik alanda edindiğim uluslararası ilişkiler, yönetimsel ve ekonomik teorik deneyimleri somutlaştırabileceğim; planlama, problem çözme gibi becerilerimle disiplinler arası çalışmaya yatkın yapımı geliştirebileceğim bir işte yer almak istiyorum. Bu bağlamda hem kendi teorik bilgimi pratiğe dönüştürmüş olacak hem de sizlere teorik bilgi, güncellik ve dinamik yapım ile katkı sağlayacağıma inanıyorum.  
  
 
 # Eğitim
