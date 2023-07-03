@@ -1,0 +1,136 @@
+---
+name: Buhara 
+surname: Sayıl
+address: "9B/14, DA Street, Ertuğrul District, Nilüfer, Bursa, Türkiye"
+phone: (545) 943 4461
+email: "buhara.s@yahoo.com"
+linkedin: "buharasayil04082021" 
+github: "Buharas"
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Some stuff about me
+
+Hello, I am Buhara. I am a 3rd year student of Politics and Economics at Ankara University Faculty of Political Sciences, and I am also a student of Securities and Capital Markets at Anadolu University. I want to take part in a job where I will concretise the theoretical experiences in international relations, management and economics that I have gained in the academic sense; I want to take part in a job where I will develop my skills such as planning, problem solving and interdisciplinary work. In this context, I believe that I will both transform my theoretical knowledge into practice and contribute to you with theoretical knowledge, timeliness and dynamic structure. 
+
+# Education
+
+```{r edu}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Politics & Economics", "2019-Continues", "Ankara University", "Ankara, Türkiye",
+  "Securities and Capital Markets", "2023-Continues", "Anadolu University", "Eskişehir, Türkiye",
+  "Secondary School", "2018", "Asal College Anatolian High School", "Bursa, Türkiye"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Work / Internship Experiences
+
+
+```{r experiences}
+library(tibble)
+
+tribble(
+  ~Title, ~Year, ~Institution, ~Where, ~Details,
+  "Research and Analysis Intern in Politics", "February 2023-Ongoing", "Public Policies Strategic Research Center (KAPSAM)", "Ankara, Turkey", "As an intern at KAPSAM, a think-tank that aims to inform policymakers and the public in the field of Public Policies, I've been responsible for tracking agenda related to working areas, finding statistics related to research topics, processing and analysing data, and managing social media posts; preparing reports by performing literature reviews. I also took part in translating articles from English to Turkish.",
+  "Economic Intern", "February 2023-Ongoing", "Food Beverage and Agriculture Policies Research Center (GİFT)", "Ankara, Turkey", "At the GIFT research center, which operates in the field of food, beverage, and agricultural policies, I played a supportive role in researching the economic factors related to food, beverages, and agriculture, considering environmental factors from a financial perspective and investigating its functionality with an innovative approach. In addition to these, I also conducted research on the sorghum plant at MISIR (Corn and Sorghum Producers Association).",
+  "Strategic Planning Staff", "June 2021-September 2022", "MUPTEN", "Bursa, Turkey", "At MUPTEN, a company serving the e-commerce sector, I played a supportive role in reaching the company's short, medium, and long-term goals as well as strategic development, growth, and financial development goals for about a year and a half. My main task was to make plans for the company's growth. These plans include finding potential products and providing areas for corporate development. In addition, I was responsible for making financial plans along with capital usage management and providing recommendations for investment activities. Likewise, I dealt with collecting and issuing invoices.",
+  "Freelance Content Creator", "2021", "Freelance Content Creator", "Online", "For a short period of time, I worked as a freelancer creating contents such as promotional text, blog posts for some companies."
+) %>%
+  detailed_entries(Title, Year, Institution, Where, Details)
+
+
+```
+
+# Courses 
+
+```{r courses}
+library(tibble)
+
+tribble(
+  ~Degree, ~Year, ~Institution, ~No,
+  "KOSGEB", "13 March 2022", "Entrepreneurship Training", "Certificate No: KSB01UGE018723924",
+  "Joint Economy Congress", "26 April-9 May 2021", "Joint Economy Congress", "Certificate No: 81931320400662",
+  "BUSMEK", "2021", "French(A1)", "",
+  "Istanbul Business Institute", "25 October 2020", "Creative Writing", "Certificate No: 251007140088",
+  "BUSMEK", "4 July-2 August 2018", "Practical English", ""
+) %>%
+  detailed_entries(Degree, Year, Institution, No)
+
+```
+
+
+# Languages  
+
+```{r languages}
+
+library(tibble)
+tribble(
+  ~Institution, ~Year, ~Language, ~Level,
+  "Ankara University Preparatory School", "2019", "English", "C1",
+  "BUSMEK", "2021", "French", "A1"
+) %>%
+  detailed_entries(Institution, Year, Language, Level)
+
+
+```
+
+
+# Known Programmes and Programme Languages
+
+```{r programme}
+
+library(tibble)
+tribble(
+  ~Institution, ~Year, ~Language,
+  "Ankara University", "2023" ,"Python",
+  "Ankara University", "2022" ,"R/RStudio",
+  "MUPTEN", "2021" ,"MS Office"
+) %>%
+  detailed_entries(Institution, Year, Language)
+
+```
+
+# Memberships
+
+```{r mem}
+
+library(tibble)
+tribble(
+  ~Institution, ~Year, ~Abbreviation,
+  "Faculty of Science and Engineering Theatre Student Community", "2019", "AFTİT"
+) %>%
+  detailed_entries(Institution, Year, Abbreviation)
+
+```
+
+# Activities and Interests
+
+- Chess
+- Efficient use of investment instruments
+- Working on personal development
+- Writing poetry, short stories, and screenplays
+- Travelling
+
+# References 
+
+```{r ref}
+
+library(tibble)
+tribble(
+ ~Title, ~Phone, ~Name, ~Mail, 
+  "KAPSAM, General Secretary and Project Coordinator", "(554) 487 8140", "Nihal Eriş", "nihal.eris@kapsam.org.tr" 
+) %>%
+  detailed_entries(Title, Phone, Name, Mail)
+
+```
