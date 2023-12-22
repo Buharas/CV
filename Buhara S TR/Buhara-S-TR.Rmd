@@ -1,0 +1,130 @@
+---
+name: Buhara 
+surname: Sayıl
+address: "Maltepe Mah, GMK Bulvarı, 75, Çankaya, Ankara"
+phone: (545) 943 4461
+email: "buhara.s@yahoo.com"
+linkedin: "buharasayil04082021" 
+github: "Buharas"
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Hakkında
+
+Merhaba, ben Buhara. Ankara Üniversitesi Siyasal Bilgiler Fakültesi Politika ve Ekonomi 4. Sınıf Öğrencisiyim. Akademik alanda edindiğim uluslararası ilişkiler, yönetimsel ve ekonomik teorik deneyimleri somutlaştırabileceğim; planlama, problem çözme gibi becerilerimle disiplinler arası çalışmaya yatkın yapımı geliştirebileceğim bir işte yer almak istiyorum. Bu bağlamda hem kendi teorik bilgimi pratiğe dönüştürmüş olacak hem de sizlere teorik bilgi, güncellik ve dinamik yapım ile katkı sağlayacağıma inanıyorum.  
+ 
+
+# Eğitim
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Politika ve Ekonomi", "2019-Devam Ediyor", "Ankara Üniversitesi", "Ankara, Türkiye",
+  "Menkul Kıymetler ve Sermaye Piyasası", "2023-Devam Ediyor", "Anadolu Üniversitesi", "Eskişehir, Türkiye",
+  "Lise", "2018", "Asal Koleji Anadolu Lisesi", "Bursa, Türkiye"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# İş/Staj Deneyimleri
+
+```{r}
+library(tibble)
+
+tribble(
+  ~Title, ~Year, ~Institution, ~Where, ~Details,
+  "İş Geliştirme Uzmanı", "Eylül 2023-Devam Ediyor", "Karma Global A.Ş.", "Ankara, Türkiye", "Dış ticaret alanında departman hizmeti veren Karma Global'de görev aldım. Sektör analizleri, ürün değerlendirmesi, pazar analizi, şirket politikaları, potansiyel müşterilerin bulunması, şirketin stratejik yaklaşımı, faaliyet alanın belirlenmesi gibi faaliyetlerde aktif rol aldım. Yönetim danışmanlığı kapsamında, SWOT analizi, organizasyon şemasının oluşturulması görevlerini üstlendim.",
+  "Stajyer", "Temmuz 2023-Ağustos 2023", "T.C. Hazine ve Maliye Bakanlığı", "Ankara, Türkiye", "T.C. Hazine ve Maliye Bakanlığı'nda yaptığım stajda bakanlığın farklı birimlerinde rol aldım. Bunlar: Kişi borçlarının sisteme kaydedilmesi, verilerin doğruluğunun ve geçerliliğinin onaylanması, kayıtların düzenli olarak güncellenmesi ve sorunların raporlanmasını içerir. Ayrıca eğitim kurumlarının yemekhane ve kantin ihalelerini takip ettim; ihalelerin yorumlanması, fiyatların ve hizmet kalitesinin karşılaştırılması gibi yardımcı rollerde bulundum. İlgili uzmanın gözetimi altında Keös operasyonlarının denetiminde de yer aldım. Bu fırsat, veri girişi, analiz, iletişim ve problem çözme becerilerimi geliştirmemi ve bakanlığın çalışma kültürünü ve görevlerini anlamamı sağladı.",
+  "Politika Araştırma ve Analiz Stajyeri", "Şubat 2023-Mayıs2023", "Kamu Politikaları Stratejik Araştırma Merkezi (KAPSAM)", "Ankara, Türkiye", "Kamu Politikaları alanında politika yapıcıları ve kamuoyunu bilgilendirmeyi amaçlayan bir düşünce kuruluşu olan KAPSAM, Çevre ve İklim Politikaları; Kapsayıcı Ekonomi ve Toplumsal Refah ve Sağlık Politikaları alanlarında çalışmalar yapmaktadır. KAPSAM düşünce kuruluşunda çalışma alanlarına dair gündemin takip etmek, araştırma konularıyla ilgili istatistiklerin bulunması, verilerin işlenmesi ve analizinin yapılması, sosyal medya paylaşımlarının yürütülmesi; kaynak taraması yapılarak rapor hazırlanması. Makalelerin İngilizceden Türkçeye çevrilmesi hususlarında görev aldım.",
+  "Ekonomi Stajyeri", "Şubat 2023-Devam Ediyor", "Gıda İçecek ve Tarım Politikaları Araştırma Merkezi (GİFT)", "Ankara, Türkiye", "Gıda içecek ve tarım politikaları alanında çalışmalar yapan GİFT araştırma merkezinde gıda, içecek ve tarım ile ilgili ekonomik etkenlerin araştırılması, mali açıdan çevresel faktörleri de göz önünde bulundurarak inovatif bir yaklaşımla işlevselliğinin araştırılmasında destekleyici bir rol üstlendim. Bunların yanı sıra MISIR (Mısır ve Sorgum Üreticiler Derneği)’da sorgum bitkisi hakkında araştırmalar yaptım.",
+  "Stratejik Planlama Personeli", "Haziran 2021-Eylül 2022", "MUPTEN", "Bursa, Türkiye", "E-ticaret sektörüne hizmet veren MUPTEN firmasında şirketin kısa, uzun ve orta vadeli hedeflerinin yanı sıra stratejik gelişme, büyüme ve finansal gelişme hedeflerine ulaşmasında yaklaşık bir buçuk yıl boyunca destekleyici bir rol üstlendim. Asıl görevim firmanın büyümesi için planlar yapmaktı. Bu planlar, potansiyel ürünleri bulma ve kurumsal gelişim için alanlar sağlamayı içerir. Ayrıca sermaye kullanımı yönetimi ile birlikte finansal planlar yapmak ve yatırım faaliyetleri belirlemekte görevlerim arasındadır.",
+  "Freelance İçerik Üreticisi", "2021", "Freelance İçerik Üreticisi", "Online", "Kısa bir süre Freelancer olarak bazı firmalar aracılığıyla içerik üretimi, tanıtım yazısı, blog yazısı gibi içerikler ürettim."
+) %>%
+  detailed_entries(Title, Year, Institution, Where, Details)
+
+```
+# Kurslar
+
+```{r}
+library(tibble)
+tribble(
+  ~Degree, ~Year, ~Institution, ~No,
+  "BTK Academy", "22 Temmuz 2023", "Proje Yönetimi", "Certificate No: 0Kohz7rJ6E",
+  "KOSGEB", "20 Temmuz 2023", "İleri Girişimcilik", "Certificate No: KSB01UGE018723924",
+  "KOSGEB", "13 Mart 2022", "Geleneksel Girişimcilik", "Sertifika No: KSB01UGE018723924",
+  "Müşterek Ekonomi Kongresi", "26 Nisan-9 Mayıs 2021", "Müşterek Ekonomi Kongresi", "Sertifika No: 81931320400662",
+  "BUSMEK", "2021", "Fransıca(A1)", "",
+  "İstanbul İşletme Enstitüsü", "25 Ekim 2020", "Yaratıcı Yazarlık", "Sertifika No: 251007140088", 
+  "BUSMEK", "4 Temmuz-2 Ağustos 2018", "Pratik İngilizce", ""
+) %>%
+  detailed_entries(Degree, Year, Institution, No)
+
+```
+
+# Diller
+
+```{r}
+library(tibble)
+tribble(
+  ~Kurum, ~Year, ~Dil, ~Seviye,
+  "Ankara Üniversitesi Hazırlık Okulu", "2019", "İngilizce", "C1",
+
+) %>%
+  detailed_entries(Kurum, Year, Dil, Seviye)
+
+```
+
+# Bilinen Program ve Program Dilleri
+
+```{r}
+library(tibble)
+tribble(
+  ~Kurum, ~Year, ~Dil,
+  "Ankara Üniversitesi", "2023" ,"Python",
+  "Ankara Üniversitesi", "2022" ,"R/RStuido",
+  "MUPTEN", "2021" ,"MS Office",  
+) %>%
+  detailed_entries(Kurum, Year, Dil)
+
+```
+
+# Üyelikler 
+
+```{r}
+library(tibble)
+tribble(
+  ~Topluluk, ~Year, ~Kısaltma, ~Kurum,
+  "FEN VE MÜHENDİSLİK FAKÜLTELERİ TİYATRO ÖĞRENCİ TOPLULUĞU", "2019", "AFTİF", "Ankara Üniversitesi"
+) %>%
+  detailed_entries(Topluluk, Year, Kısaltma, Kurum)
+
+```
+
+# Aktiviteler ve İlgi Alanları 
+
+- Satranç
+- Yatırım araçlarını etkin kullanmak
+- Şiir, Öykü ve Senaryo Yazmak
+- Seyahat etmek 
+
+
+# Referanslar
+
+```{r}
+library(tibble)
+tribble(
+ ~ Title, ~ Phone, ~ Name, ~ Mail, 
+  "KAPSAM, Genel Sekreter ve Proje Koordinatörü", "(554) 487 8140", "Nihal Eriş", "nihal.eris@kapsam.org.tr" 
+  
+) %>%
+  detailed_entries(Title, Phone, Name, Mail)
+```
